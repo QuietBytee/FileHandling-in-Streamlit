@@ -1,15 +1,15 @@
 import streamlit as st
 import pandas as pd
 
-st.subheader("Upoading the CSV file : ")
+st.subheader("Uploading the CSV file : ")
 df=st.file_uploader("Upload your CSV file here : ",type=['csv','xlsx'])
 if df is None:
     st.markdown("###### Loading the CSV file... ")
 else:
-    st.dataframe(pd.read_csv(r'C:\Users\dell\Desktop\dataScience\Streamlit\products.csv').head())
+    st.dataframe(pd.read_csv(r'products.csv').head())
 
 st.subheader("Dealing with images directly")
-st.image(r'C:\Users\dell\Desktop\dataScience\Streamlit\To_close_streamlit.PNG')
+st.image(r'img.PNG')
 
 
 st.subheader("Dealing with images by uploading")
